@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .image-container {
+    width: 24.5%;
+    height: 32%;
+    position: absolute;
+    overflow: hidden;
+  }
+  
+  .module-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .module-image.flipped {
+    transform: scaleX(-1);
+  }
+  
+  .image-container:nth-child(1) { top: 1.25%; left: 0; }
+  .image-container:nth-child(2) { top: 1.25%; left: 25%; }
+  .image-container:nth-child(3) { top: 1.25%; left: 50%; }
+  .image-container:nth-child(4) { top: 1.25%; left: 75%; }
+  .image-container:nth-child(5) { top: 34.2%; left: 0; }
+  .image-container:nth-child(6) { top: 34.2%; left: 25%; }
+  .image-container:nth-child(7) { top: 34.2%; left: 50%; }
+  .image-container:nth-child(8) { top: 34.2%; left: 75%; }
+  .image-container:nth-child(9) { top: 67.2%; left: 0; }
+  .image-container:nth-child(10) { top: 67.2%; left: 25%; }
+  .image-container:nth-child(11) { top: 67.2%; left: 50%; }
+  .image-container:nth-child(12) { top: 67.2%; left: 75%; }
+  
+  #prepare-game-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ff8800;
+    padding: 20px;
+    border: 4px solid #000;
+    border-radius: 10px;
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    line-height: 36px;
+    font-size: 40px;
+    /* 添加阴影效果，水平偏移量为 0，垂直偏移量为 0，模糊程度为 10px，透明度为 0.8*/
+    box-shadow: 0 0 30px rgb(0, 0, 0, 0.8);
+  }
+  
