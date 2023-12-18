@@ -23,6 +23,33 @@ body {
     z-index: -1; /* 将图片置于底层 */
 }
 
+#background-image2 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    z-index: -1; /* 将图片置于底层 */
+}
+
+#background-image3 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    z-index: -1; /* 将图片置于底层 */
+}
+
+#background-image4 {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    z-index: -1; /* 将图片置于底层 */
+}
+
 h1 {
     position: fixed;
     top: 300px;
@@ -51,4 +78,19 @@ p {
     position: absolute;
     left: 20px;
     top: 60px
+}
+
+.brick{
+    position: fixed;
+    top: 250px;
+    right: 20px;
+    z-index: 100;
+}
+
+.brickwriter {
+    color:rgb(38, 0, 255);
+    font-size: 0.95em;
+    position: absolute;
+    right: 20px;
+    top: 300px
 }
