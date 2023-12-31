@@ -52,45 +52,95 @@ body {
 
 h1 {
     position: fixed;
-    top: 300px;
-    left: 550px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 2.5em;
 }
   
 p {
     position: fixed;
-    top: 350px;
-    left: 450px;
-    font-size: 1.25em;
-    color: #ff0000;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.15em;
+    color: #000000;
 }
 
+
 .kun {
+    color:rgb(231, 2, 158);
     position: fixed;
-    top: 20px;
-    left: 20px;
+    top: 10%;
+    left: 25%;
+    transform: translate(-50%, -50%);
     z-index: 100;
+    font-size: 2em;
 }
 
 .kunwriter {
-    color:rgb(38, 0, 255);
-    font-size: 0.95em;
+    color:rgb(231, 2, 2);
+    font-size: 1em;
     position: absolute;
-    left: 20px;
-    top: 60px
+    transform: translate(-50%, -50%);
+    top: 18%;
+    left: 25%;
 }
 
 .brick{
+    color:rgb(231, 2, 158);
     position: fixed;
-    top: 250px;
-    right: 20px;
+    top: 25%;
+    left: 75%;
+    transform: translate(-50%, -50%);
     z-index: 100;
+    font-size: 2em;
 }
 
 .brickwriter {
-    color:rgb(38, 0, 255);
+    color:rgb(231, 2, 158);
+    font-size: 1.2em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 30%;
+    left: 75%;
+}
+
+.PlaneWars {
+    color:rgb(231, 2, 158);
+    position: fixed;
+    top: 73%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    font-size: 2em;
+}
+
+.PlaneWarsWriter {
+    color:rgb(231, 2, 158);
     font-size: 0.95em;
     position: absolute;
-    right: 20px;
-    top: 300px
+    transform: translate(-50%, -50%);
+    top: 78%;
+    font-size: 1.5em;
+    left: 25%;
+}
+
+.CardMemory{
+    color:rgb(255, 135, 0);
+    position: fixed;
+    top: 73%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    font-size: 35px;
+}
+
+.CardMemoryWriter {
+    color:rgb(231, 2, 158);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 78%;
+    left: 75%;
+    font-size: 25px;
 }

@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+  /*设置字体为Kanit*/
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /*不管浏览器大小，元素都在正中间*/
+  flex-direction: column;
+}
+
+h2 {
+  margin-bottom: 30px;
+  font-size: 2.5em;
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: #ff0000;
+}
+
+h4 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0.88em;
+}
+
+.box {
+  position: relative;
+  width: 600px;
+  height: 200px;
+  border-bottom: 1px solid #555555;
+  /*外框线*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box label {
+  position: relative;
+  width: 100%;
+  height: 33.333%;
+  /*把三个checkbox分成上中下三部分*/
+  border: 1px solid #555555;
+  /*内框线*/
+  border-bottom: none;
+}
+
+.box label input {
+  position: relative;
+  appearance: none;
+  /*隐藏checkbox*/
+  z-index: 1000;
+  /*使得checkbox在最上层以便被点击*/
+}
+
+.box label i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 600px;
+}
+
+.box label:nth-child(1) i {
+  background-image: url(01.jpg);
+  animation: animate 0.4s steps(3) infinite;
+  /*分三步进行体现，对应三张图片的拼图*/
+}
+
+.box label:nth-child(2) i {
+  background-image: url(02.jpg);
+  animation: animate 0.3s steps(3) infinite;
+}
+
+.box label:nth-child(3) i {
+  background-image: url(03.jpg);
+  animation: animate 0.6s steps(3) infinite;
+}
+
+@keyframes animate
+
+/*关键帧元素，当开始时，图片位置在最左端；当结束时，图片位置在最右端*/
+  {
+  0% {
+    background-position: 0px;
+  }
+
+  100% {
+    background-position: 600px;
+  }
+}
+
+.box label input:checked~i {
+  animation-play-state: paused;
+  /*当checkbox被点击时，暂停动画*/
+}
+
+.reset {
+  margin-top: 40px;
+  border: none;
+  font-size: 1.3em;
+  padding: 10px 25px;
+  background: #1f1e33;
+  color: #ffffff;
+}
+
+.reset:active
+
+/*当One More Time!按钮被点击时，显示不同的颜色和尺寸*/
+  {
+  background: #39c5bb;
+  transform: scale(0.96);
+}
